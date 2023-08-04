@@ -455,20 +455,127 @@
 //     console.log(MyString[key])
 //  }
 //For of 
- var Khung =[
-    'a',
-    'b','c','d','e'
- ]
- for( var value of Khung){
-    console.log(value)
- }
+//  var Khung =[
+//     'a',
+//     'b','c','d','e'
+//  ]
+//  for( var value of Khung){
+//     console.log(value)
+//  }
 
- var Dien={
-    name:'Bình thường',
-    name1:'Tam thân'
- }
-console.log(Object.keys(Dien))
-console.log(Object.values(Dien)) //Object.keys nó sẽ giúp vòng for of có thể lấy được key và value trong object
- for(var value of Object.values(Dien)){
-    console.log(value)
- }//
+//  var Dien={
+//     name:'Bình thường',
+//     name1:'Tam thân'
+//  }
+// console.log(Object.keys(Dien))
+// console.log(Object.values(Dien)) //Object.keys nó sẽ giúp vòng for of có thể lấy được key và value trong object
+//  for(var value of Object.values(Dien)){
+//     console.log(value)
+//  }
+
+ //Vòng lặp while
+//  var i=0
+//  var isSussess =false;
+//  while (i<1000) {
+//    i++
+//    console.log(i)
+//  }
+//Vòng lặp do while
+// do{
+//    i++
+//    console.log('Khung'+i)
+//    if (true) {
+//       isSussess =true;
+//    }
+//    //code
+// }while (!isSussess &&i>3); //cho dù điều kiện đúng hay sai thì vòng lặp này cũng sẽ chạy một lần.
+//Break and Continue
+
+// for (var i=0 ; i<10 ; i++){
+//    if (i%2 !== 0 ) {
+//       continue
+//    }
+//    console.log(i)
+// }
+
+//Vòng lặp lồng nhau
+// var MyArray =[
+//    [1,2],
+//    [3,4],
+//    [5,6]
+// ]
+
+// for(var i =0; i<MyArray.length ;i++){
+//    for (var j = 0; j < MyArray[i].length; j++) {
+//     console.log(MyArray[i][j])
+      
+//    }
+// }
+// for (var i=100; i>0; i--){
+//    console.log(i)
+// }
+
+// for (var j=0 ; j<=100; j+=5){ //i+=5 tức là i =i+5 nhé
+//    console.log(j)
+// }
+//Làm việc với mảng phần 2
+//
+
+// var luan =[
+//    {
+//       id:1,
+//       class:'PNV24A',
+//       name:'Lê Thị Khùng'
+//    },
+//    {
+//       id:2,
+//       class:'PNV24A',
+//       name:'Lê Trương Thành Luân'
+//    },
+//    {
+//       id:3,
+//       class:'PNV24A',
+//       name:'Trương Văn Xàm Lông'
+//    },
+//    {
+//       id:4,
+//       class:'PNV24A',
+//       name:'Lê Trương'
+//    },
+// ]
+
+// luan.forEach(function(luan, index){
+//    console.log(index,luan)
+// });//callback sẽ đc gọi lai
+// // foreach nó giúp duyệt qua từng phần tử trong mảng nhé
+// luan.every(function(luan, index){
+//    console.log(index,luan)
+// }); //everylà từng phần tử trong mảng phải thỏa mãn điệu kiện gì đó
+//giá trị trả về của every là giá trị Bolean đúng hoặc sai
+//Chỉ cần một thằng sai thì sẽ kiểm tra di nhất phần tử trước đó đã kiểm tra và trả ra kết quả
+//Some chỉ cần có một cái đúng thì nó sẽ trả về kết quả đó luôn
+//Find tìm kiếm nếu tìm kiếm ra được nó sẽ trả ra kết quả còn k thì sẽ trả ra kết quả null hoặc undìin
+// cũng duyệt qua tất cả nếu cái nào đúng thì sẽ trả ra kết quả và vòng lặp sẽ kết thúc luôn.
+//Chỉ tìm ra duy nhất một đối tượng thôi
+//Array .map dùng để thay đổi nội dụng trên tất cả  phần tử
+
+// function luan1(luan ,index){
+//    // console.log(luan)
+//    return{
+//       id:luan.id,
+//       class:`Lớp: ${luan.class}`,
+//       name:`Tên: ${luan.name}`
+//    }
+// }
+// var news = luan.map(luan1);
+// console.log(news)
+
+//Reduce muốn nhận một giá trị di nhất
+
+//HTML DOM 
+//1.Element :id, class
+
+
+var headingNodes = document.querySelector('.heading');
+console.log(headingNodes);
+// headingNodes. ='adsfghfdwasdgfh'
